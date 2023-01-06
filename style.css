@@ -1,0 +1,154 @@
+/*این استایل برای همه ی اجزا جاشیه را جزو ارتفاع و پهنا محاسبه می کند*/
+*{
+    box-sizing: border-box;
+}
+/*بلاک مربوط به بدنه ی صفحه و تعیین مکانو نحوه ی الحاق تصویر پس زمینه وفونت ها و رنگ پس
+زمینه واینکه پس زمینه کل صفحه را بپوشاند و مکان الحاق آیتم ها از وسط  و
+منبع عکس پس زمینه و 
+
+ */
+body{
+    background-color: #9595c5;
+    background-image: url("Sources/BackGround.jpg");
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+/*  این بلاک مشخص می کند که فرم مربوط به اطلاعات کار بر از حدی بیشتر پهنا نگیرد
+و سایز و ابعاد مربوط به آن را مشخص میکند و اینکه از لبه ی سمت راست مقداری پنج
+پیکسل فاصله داشته باشد*/
+.user-form{
+    max-width: 700px;
+    width: 100%;
+    margin-right: 5px;
+    padding: 15px;
+}
+/*حدود یک سوم از عرض بدنه ی اصلی را تشکیل می دهد و شامل فرم کاربر میشود که فرمی
+است که در آن سرچ بار و دکمهی سابمیت قرار دارند این استایل سایر ویژگی های مربوط
+به آن یعنی رنگ پس زمینه و شعاع حاشیه(ضخامت)وفاصله از جاشیه راست و را هم مشخص می کند.*/
+.form-div{
+    width: 30%;
+    background-color: #511017;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+/*این بلاک کل مشخصات توسعه دهنده را شامل می شود و هفتاد درصد عرض المنت پدر خود
+را اتخاذ می نماید*/
+#main{
+    width: 70%;
+}
+/*ویژگی های مربوط به سرچ بار را مشخص می نماید مانند رنگ داخل و فونت که از المنت
+والد خود به ارث می برد و سایر جزییات مربوط  به استایل سرچ بار*/
+.user-form input {
+    width: 100%;
+    margin-right: 8px;
+    display: flex;
+    background-color: #17121f;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0,0,0,0.1);
+}
+/*این استایل رنگ مربوط به متن داخل سرچ بار را تنظیم می نماید*/
+.user-form input::placeholder{
+    color: rgb(214, 213, 213);
+}
+/*این استایل اوتلاین هایی که باعث ایجاد لینک و..می شوند را حذف می نماید*/
+.user-form input:focus{
+    outline: none;
+}
+/* استایل مربوط به کارت سمت چپ است که نتایج جستجو از جمله اطلاعات توسعه دهنده و
+عکس و ...آن را شامل می شود واین استایل ویژگی هایی مانند سایز و رنگ پس زمینه و پد مربوط به
+کارت را تعیین می نماید*/
+.card {
+    max-width: 800px;
+    background-color: #511017;
+    border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0,0,0,0.1);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+/*بلاک مربوط به آواتار(تصویر کاربر) ورنگ حاشیه و ابعاد طول و عرض حاشیه ی آن */
+.avatar{
+    border-radius: 50%;
+    border: 10px solid #000000;
+    height: 150px;
+    width: 150px;
+}
+/*استایل مربوط به اطلاعات کاربر است که رنگ مربوط به آن و فاصله از حاشیه چپ را
+تعیین می نماید*/
+.user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+/*این استایل مربوط به اسم کاربر که فاصله با حاشیه ی بالا را صفر می کند*/
+.user-info h2{
+    margin-top: 0;
+}
+/* سه استایل زیر مربوط به تعیین مکان و پد فالوور و فالووینگ ها و ریپازیتوری و تکست های آن هامباشد.*/
+.user-info ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+}
+.user-info ul li{
+    display: flex;
+    align-items: center;
+}
+.user-info ul li strong{
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+/*اسم ریپازیتوری های کار بر را در لاک هایی در یک خط قرار می دهد*/
+.repo{
+    text-decoration: none;
+    color: #fff;
+    background-color: #073f33;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+/*با توجه به اینکه باکس مربوط به یوزر و سرچ بار و نتایج توسعه دهنده برای کمتر از
+هفتصد و پنجاه پیکسل به هم میریزد به برای آن ها برای کمتر از این پهنا استایل جدید
+تعریف می کنیم تا این مشکل بر طرف گردد.*/
+@media (max-width: 500px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-form{
+        max-width: 400px;
+    }
+}
+/*استایل مربوط به دکمه ی سابمیت و رنگ پس زمینه و سایز و ویژگی های آن*/
+.button{
+    width: 50%;
+    display: block;
+    position: relative;
+    background-color: #17121f;
+    border-radius: 5px;
+    color: #fff;
+    padding: 2px;
+    margin-left: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    margin: 10%;
+}
